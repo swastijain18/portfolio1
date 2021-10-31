@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Contact</title>
+        <!--Linking style sheets-->
+        <link rel="stylesheet" href="portfolio.css">
+
+        <!--Linking font icon sheets-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    </head>
+    <body style="background-color: rgb(217, 242, 250); ">
+
+        <!--contact form and background-->
+
+        <div id="item4">
+            <div class="head">CONTACT FORM</div>
+            <form class="form" name="contact" method="POST">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <textarea id="content" name="content" cols="30" rows="10"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="connect">
+                Follow Me
+            </div>
+            <a href="https://instagram.com/swastijain18?utm_medium=copy_link" target="blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/swasti-jain-0846881a9" target="blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://github.com/swastijain18" target="blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <br><br>
+            <div class="mail">Email ID: swastijain1809@gmail.com</div>
+        </footer>
+        <!--Adding image to the footer-->
+        <!-- <div class="photo">
+            <img src="8..jpg">
+        </div> -->
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzu0pWexrHVNmycq6ArNkc_aA-H5_4xIHjKI2y5OFVf2iqV56ncnvcsXGfL7_JlzRNvtA/exec'
+            const form = document.forms['contact']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+    </body>
+</html>

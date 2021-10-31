@@ -1,0 +1,181 @@
+.slides{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slides .carousel-inner img{
+    width: 100%;
+    height: 100%;   
+}
+/*styling of slide 1*/
+.slides #item1 .carousel-caption{
+    color: white;
+    font-weight: bolder;
+    font-family:'Inconsolata', monospace;
+    font-style: italic;
+    font-size: 90px; 
+    top: 50%;
+    left: 710px;
+}
+.slides #item1 .carousel-caption p{
+    font-size: 50px;
+}
+/*styling of slide 2*/
+#item2 .carousel-caption a{
+    color: white;
+    margin: 10px;
+    font-weight: bolder;
+    font-family:'Inconsolata', monospace;
+    font-size: 50px; 
+    text-decoration: none;
+    width: 200px;
+}
+.hero{
+    top:20%;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    position: absolute;
+    left: 850px;
+}
+#item2 .carousel-caption a:hover{
+    font-size: 53px;
+}
+
+/*styling of contact page(new file)*/
+.backg{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px;
+}
+#item4{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+#item4 .head{    
+    float: left;
+    margin:15px;
+    font-size: 55px;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-family:'Inconsolata', monospace;
+    text-shadow: 2px 2px 4px blue; 
+}
+
+/*styling of contact form items*/
+#item4 .form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;   
+}
+#item4 input, textarea{
+    padding: 10px;
+    margin:15px;
+    border: none;
+    border-radius: 6px
+}
+#item4 button{
+    padding: 4px;
+    margin: 15px;
+    width: 150px;
+    color: black;
+    font-family: cursive;
+    font-size:medium;
+    font-weight: bolder;
+    background-color: rgba(35, 35, 248, 0.842);
+    border-radius: 6px;
+    border: 2px solid black;
+}
+/*Styling the footer*/
+footer{
+    margin: 50px;
+    margin-left: 70px;
+    padding: 20px;
+}
+footer .connect{
+    font-size: 40px;
+    font-family: cursive;
+    color: blue;
+    font-weight: bold;
+    margin: 20px
+}
+footer a{
+    float: left;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+footer a:hover{
+    color: blue;
+}
+.mail{
+    margin-top: 30px;
+    color: black;
+    font-size: 20px;
+    font-family: cursive;
+}
+/* 
+.photo {
+    float: right;
+    width: 280px;
+    height: 150px;
+}
+.photo img{
+    width: 280px;
+    height: 150px;
+    margin: 100px 100px;
+} */
+
+
+/*Styling of About page*/
+
+.container{
+    margin: 40px;
+    padding: 30px 50px; 
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .head{
+    font-size: 150px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px teal;
+}
+.container span{
+    font-size: 350px;
+    color:rgb(231, 33, 72);
+}
+.container p{
+    color: rgb(247, 68, 104);
+    margin: 150px;
+    font-size: 23px;
+    width: 400px;
+    height: auto;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-align: center;
+}
+.skills{
+    margin: 20px;
+    padding: 20px;
+}
+.skills .head{
+    font-size: 60px;
+    color: black;
+    text-align: center;
+    font-family:serif;
+}
+.skills .logo{
+    display: flex;
+    flex-direction: row;
+    margin: 40px;
+}
+.logo img{
+    width: 200px;
+    height: 170px;
+    margin: 20px;
+
+}
